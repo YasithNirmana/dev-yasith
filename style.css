@@ -12,8 +12,18 @@ header{
     width: 100%;
     background-color: #1F2833;
     border-color:#1F2833;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+.download_cv{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #C5C6C7;
+    margin: 0 100px;
+}
+.download_cv p{
+    margin:0;
 }
 section{
     margin:0 100px;
@@ -52,7 +62,6 @@ nav a{
     margin-right: 20px;
 }
 .hero_img{
-    width: 660px;
     float:right;
     grid-row: 1/1;
     height: 400px;
