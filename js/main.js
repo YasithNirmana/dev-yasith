@@ -78,7 +78,7 @@
     }, {offset: '80%'});
 
 
-    // Testimonials carousel
+    // Testimonials carousel+
     $(".testimonials-carousel").owlCarousel({
         center: true,
         autoplay: true,

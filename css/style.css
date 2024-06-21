@@ -1306,7 +1306,6 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #EF233C;
 }
 
 .contact .container-fluid {
@@ -1317,30 +1316,30 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    background: #ffffff;
 }
 
 .contact .contact-form input {
-    color: #ffffff;
+    color: #414141;
     padding: 15px 0;
     background: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
+    border-bottom: 1px solid #414141;
 }
 
 .contact .contact-form textarea {
-    color: #ffffff;
+    color: #414141;
     height: 90px;
     padding: 15px 0;
     background: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
+    border-bottom: 1px solid #414141;
 }
 
 .contact .contact-form .form-control::placeholder {
-    color: #ffffff;
+    color: #414141;
     opacity: 1;
 }
 
@@ -1354,13 +1353,14 @@ a:focus {
     color: #EF233C;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
+    border-color: #414141;
 }
 
 .contact .contact-form .btn:hover {
-    color: #ffffff;
+    color: #414141;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+    box-shadow: inset 0 0 0 0 #414141;
+    border-color: #414141;
 }
 
 .contact .help-block ul {
