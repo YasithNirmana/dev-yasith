@@ -13,7 +13,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #414141;
+    color: #202020;
 }
 
 a {
@@ -126,7 +126,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #414141;
+    color: #202020;
 }
 
 
@@ -201,7 +201,7 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #414141;
+        color: #202020;
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
@@ -404,6 +404,9 @@ a:focus {
         padding: 10px 15px;
         letter-spacing: 1px;
     }
+    .hero-btn {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -560,6 +563,7 @@ a:focus {
 @media (max-width: 991.98px) {
     .about .about-content {
         padding: 45px 15px 0 15px;
+        text-align: center;
     }
 }
 
@@ -950,7 +954,7 @@ a:focus {
 }
 
 .banner .section-header p {
-    color: #414141;
+    color: #202020;
     background: transparent;
 }
 
@@ -963,7 +967,7 @@ a:focus {
 }
 
 .banner .section-header h2 span {
-    color: #414141;
+    color: #202020;
     font-size: 50px;
 }
 
@@ -1024,7 +1028,7 @@ a:focus {
 
 .price .price-header {
     padding: 45px 0 30px 0;
-    color: #414141;
+    color: #202020;
 }
 
 .price .price-item.featured-item .price-header {
@@ -1081,15 +1085,15 @@ a:focus {
 
 .price .price-item .price-action .btn {
     color: #ffffff;
-    background: #414141;
-    box-shadow: inset 0 0 0 50px #414141;
+    background: #202020;
+    box-shadow: inset 0 0 0 50px #202020;
 }
 
 .price .price-item .price-action .btn:hover {
-    color: #414141;
+    color: #202020;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #414141;
-    border-color: #414141;
+    box-shadow: inset 0 0 0 0 #202020;
+    border-color: #202020;
 }
 
 .price .price-item.featured-item .price-action .btn {
@@ -1338,26 +1342,26 @@ a:focus {
 }
 
 .contact .contact-form input {
-    color: #414141;
+    color: #202020;
     padding: 15px 0;
     background: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid #414141;
+    border-bottom: 1px solid #202020;
 }
 
 .contact .contact-form textarea {
-    color: #414141;
+    color: #202020;
     height: 90px;
     padding: 15px 0;
     background: none;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid #414141;
+    border-bottom: 1px solid #202020;
 }
 
 .contact .contact-form .form-control::placeholder {
-    color: #414141;
+    color: #202020;
     opacity: 1;
 }
 
@@ -1371,14 +1375,14 @@ a:focus {
     color: #7752fa;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
-    border-color: #414141;
+    border-color: #202020;
 }
 
 .contact .contact-form .btn:hover {
-    color: #414141;
+    color: #202020;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #414141;
-    border-color: #414141;
+    box-shadow: inset 0 0 0 0 #202020;
+    border-color: #202020;
 }
 
 .contact .help-block ul {
@@ -1468,7 +1472,7 @@ a:focus {
 }
 
 .blog .blog-meta i {
-    color: #414141;
+    color: #202020;
     margin-right: 5px;
 }
 
@@ -1550,7 +1554,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #414141;
+    color: #202020;
 }
 
 .footer .copyright {
@@ -1586,7 +1590,7 @@ a:focus {
 }
 
 .footer .copyright p a:hover {
-    color: #414141;
+    color: #202020;
 }
 
 @media (max-width: 575.98px) {
