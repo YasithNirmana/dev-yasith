@@ -836,7 +836,7 @@ a:focus {
 
 .portfolio #portfolio-filter {
     padding: 0;
-    margin: -15px 0 25px 0;
+    margin: 15px 0 25px 0;
     list-style: none;
     font-size: 0;
     text-align: center;
@@ -869,11 +869,13 @@ a:focus {
 
 .portfolio .portfolio-item {
     position: relative;
+    margin-bottom: 50px;
 }
 
 .portfolio .portfolio-wrap {
     position: relative;
     width: 100%;
+    transition: .5s;
 }
 
 .portfolio .portfolio-img {
@@ -886,19 +888,20 @@ a:focus {
     width: 100%; 
     height: 100%; 
     object-fit: cover;
-    transform: scale(1.1);
     transition: .5s;
 }
 
-.portfolio .portfolio-item:hover img {
-    margin-left: 15px;
+.portfolio .portfolio-item:hover .portfolio-wrap {
+    transform: scale(1.5);
+    z-index: 2;
 }
 
 .portfolio .portfolio-text {
     position: relative;
     height: 60px;
-    width: calc(100% - 30px);
-    margin: -30px 15px 30px 15px;
+    /* width: calc(100% - 30px); */
+    width: 100%;
+    /* margin: 0px 15px 30px 15px; */
     display: flex;
     align-items: center;
     background: #ffffff;
