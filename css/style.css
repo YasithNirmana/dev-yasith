@@ -892,11 +892,14 @@ a:focus {
 }
 
 .portfolio .portfolio-item:hover .portfolio-wrap {
-    transform: scale(1.5);
     z-index: 2;
 }
 
-.portfolio .portfolio-text {
+@media (hover: hover), (-ms-high-contrast:none) {
+    .portfolio .portfolio-item:hover .portfolio-wrap {
+        transform: scale(1.5);
+    }
+  }
     position: relative;
     height: 60px;
     /* width: calc(100% - 30px); */
