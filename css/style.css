@@ -1,10 +1,11 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lalezar&display=swap');
 body {
-    color: #797979;
-    background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-image: linear-gradient(to right, black , #3F3F3F);
+    font-family: "Krub", sans-serif;
 }
 
 h1,
@@ -13,18 +14,22 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #202020;
+    color: white;
+}
+
+h1{
+    font-family: "Kelly Slab", sans-serif;
 }
 
 a {
-    color: #313131;
+    color: black;
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #7752fa;
+    color: white;
     outline: none;
     text-decoration: none;
 }
@@ -38,26 +43,29 @@ a:focus {
     max-width: 1366px;
 }
 
+.container {
+    max-width: 1366px;
+}
+
 .btn {
     padding: 12px 25px;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #7752fa;
-    border: 2px solid transparent;
+    /* background: #7752fa; */
+    border: 2px solid white;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #7752fa;
+    /* box-shadow: inset 0 0 0 50px #7752fa; */
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #7752fa;
+    /* color: #7752fa; */
     background: transparent;
     box-shadow: inset 0 0 0 0 #7752fa;
-    border-color: #7752fa;
 }
 
 #loader {
@@ -125,10 +133,6 @@ a:focus {
     color: #ffffff;
 }
 
-.back-to-top:hover i {
-    color: #202020;
-}
-
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -147,13 +151,20 @@ a:focus {
 }
 
 .navbar .navbar-brand {
+    font-family: "Lalezar", system-ui;
+    background-image: linear-gradient(to right, white , #9B9B9B, white);
+    color: transparent;
+    background-clip: text;
     margin: 0;
-    font-size: 45px;
-    line-height: 0px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
     
+}
+
+.navbar .navbar-brand:hover {
+    color: inherit
 }
 
 .navbar .navbar-brand img {
@@ -180,39 +191,46 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #ffffff !important;
+        background: linear-gradient(to right, black , #3F3F3F) !important;
     }
     
     .navbar .navbar-brand {
-        color: #ffffff;
+        /* color: #ffffff; */
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #7752fa;
+        /* color: #7752fa; */
     }
 
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
-        padding: 10px 10px 8px 10px;
+        padding: 8px 20px;
+        min-width: 90px;
+        margin: 0px 5px;
         color: #ffffff;
         font-size: 15px;
         font-weight: 500;
+        text-align: center;
+        border-radius: 20px;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #202020;
+        color: white;
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: black;
+        background-image:  linear-gradient(to right, white , #9B9B9B, white);
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #7752fa;
+        color: black;
+        background-image:  linear-gradient(to right, white , #9B9B9B, white);
     }
+
 }
 
 @media (max-width: 991.98px) {   
@@ -222,7 +240,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #7752fa;
+        color: black;
     }
     
     .navbar .navbar-nav {
@@ -248,7 +266,6 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: #7752fa;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,23 +297,22 @@ a:focus {
 
 .hero .hero-text p {
     color: #ffffff;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .hero .hero-text h1 {
     color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 3px;
+    font-size: 110px;
     margin-bottom: 15px;
+}
+.hero .hero-text h1 span{
+    color: #9B9B9B;
 }
 
 .hero .hero-text h2 h3 {
     display: inline-block;
     margin: 0;
-    height: 35px;
+    height: 32px;
     color: #ffffff;
     font-size: 35px;
     font-weight: 600;
@@ -309,7 +325,6 @@ a:focus {
 }
 
 .hero .hero-btn .btn {
-    color: #7752fa;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
     display: flex;
@@ -322,6 +337,9 @@ a:focus {
     box-shadow: inset 0 0 0 0 #ffffff;
     border-color: #ffffff;
 }
+.hero-portfolio-link {
+    color: white;
+}
 
 .hero .hero-btn .btn:first-child {
     margin-right: 10px;
@@ -331,19 +349,23 @@ a:focus {
     margin-top: 35px;
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
 .hero-btn a {
-    margin: 0 12px;
+    /* margin: 0 12px; */
     font-weight: bold;
 }
 
-.portfolio-btn {
-    color: #fff;
+.primary-btn{
+    background-image: linear-gradient(to right, white , #9B9B9B, white);
+    padding: 15px 40px;
+    border-radius: 20px;
+    margin: 0;
 }
 
-.portfolio-btn:hover {
-    color: #111;
+.primary-btn:hover{
+    color: black;
 }
 
 @media (max-width: 991.98px) {
@@ -442,42 +464,24 @@ a:focus {
     display: inline-block;
     margin: 0 30px;
     margin-bottom: 10px;
-    padding-left: 15px;
     position: relative;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: #ffffff;
-}
-
-.section-header p::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    top: 11px;
-    right: 0;
-    left: -30px;
-    background: #7752fa;
-    z-index: -1;
-}
-
-.section-header p::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 3px;
-    top: 11px;
-    left: 3px;
-    background: #7752fa;
-    z-index: 1;
+    background-image: linear-gradient(to right, white , #9B9B9B);
+    color: transparent;
+    background-clip: text;
 }
 
 .section-header h2 {
     margin: 0;
     position: relative;
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 700;
+    background-image: linear-gradient(to right, white , #9B9B9B, white);
+    color: transparent;
+    background-clip: text;
 }
 
 @media (max-width: 767.98px) {
@@ -493,7 +497,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    margin: -45px 0 45px 0;
+    margin: 45px 0 45px 0;
 }
 
 .about .col-lg-6 {
@@ -560,11 +564,72 @@ a:focus {
     margin-top: 15px;
 }
 
+.about a{
+    color: black;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+.about a:hover{
+    color: black;
+}
+
+.about img {
+    margin: 0px 10px;
+}
+
+.about .row {
+    align-items: start !important;
+}
+
 @media (max-width: 991.98px) {
     .about .about-content {
         padding: 45px 15px 0 15px;
         text-align: center;
     }
+}
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+
+.contact input[type=text], input[type=number], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.fname-col{
+    padding-left: 0;
+}
+
+.lname-col{
+    padding-right: 0;
+}
+
+.contact .row {
+    align-items: start !important;
+    margin: 20px 10px;
+    font-size: 14px;
+}
+
+.contact .row img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contact .row a {
+    color: black;
+    font-weight: 500;
+}
+
+.contact .row a:hover {
+    color: black;
 }
 
 
@@ -763,7 +828,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #7752fa;
+    /* box-shadow: inset 800px 0 0 0 #7752fa; */
 }
 
 .service .service-icon {
@@ -773,14 +838,13 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #7752fa;
-    background: #ffffff;
+    border: 1px solid white;
 }
 
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #7752fa;
+    color: white;
     transition: .3s;
 }
 .service-icon {
@@ -829,70 +893,117 @@ a:focus {
 /*******************************/
 /******** Portfolio CSS ********/
 /*******************************/
-.portfolio {
+.slideshow-container {
     position: relative;
-    padding: 45px 0 15px 0;
+    margin: auto;
 }
 
-.portfolio #portfolio-filter {
+.portfolio-slide {
+    border-radius: 20px;
+    background-image:  linear-gradient(to right, white , #DADADA, white);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 100px;
+    position: relative;
+}
+
+.portfolio-heading {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.portfolio-heading:hover {
+    color: black;
+}
+
+.portfolio-subsection{
+    color: black;
+    font-size: 14px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px 25px;
+    margin-top: -22px;
+    color: black !important;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.portfolio-service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    
+}
+
+.portfolio-service-icon {
+    width:32px;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.faded {
+    opacity: 30%;
+}
+
+.portfolio-technologies img {
+    margin-right: 20px;
+}
+
+/*******************************/
+/******** Packages CSS ********/
+/*******************************/
+
+.package-column{
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 20px;
     padding: 0;
-    margin: 15px 0 25px 0;
-    list-style: none;
-    font-size: 0;
+    margin: 10px;
+}
+
+.package-column div {
+    color: black;
+    background-image:  linear-gradient(to right, white , #DADADA, white);
+    border-radius: 20px;
+    padding: 20px;
     text-align: center;
 }
 
-.portfolio #portfolio-filter li {
-    cursor: pointer;
-    display: inline-block;
-    margin: 5px;
-    padding: 6px 12px;
+.package-column button {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+}
+
+.package-column ul {
+    text-align: left;
+    margin: 20px 10px;
     font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    background: #7752fa;
-    border: 2px solid transparent;
-    border-radius: 0;
-    box-shadow: inset 0 0 0 50px #7752fa;
-    transition: ease-out 0.3s;
-    -webkit-transition: ease-out 0.3s;
-    -moz-transition: ease-out 0.3s;
-}
-
-.portfolio #portfolio-filter li:hover,
-.portfolio #portfolio-filter li.filter-active {
-    color: #7752fa;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #7752fa;
-    border-color: #7752fa;
-}
-
-.portfolio .portfolio-item {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.portfolio .portfolio-wrap {
-    position: relative;
-    width: 100%;
-    transition: .5s;
-}
-
-.portfolio .portfolio-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio .portfolio-img img {
-    position: relative;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    transition: .5s;
-}
-
-.portfolio .portfolio-item:hover .portfolio-wrap {
-    z-index: 2;
+    line-height: 2.5;
 }
 
 @media (hover: hover), (-ms-high-contrast:none) {
@@ -900,6 +1011,8 @@ a:focus {
         transform: scale(1.5);
     }
   }
+
+.portfolio .portfolio-text, .portfolio .portfolio-description {
     position: relative;
     height: 60px;
     /* width: calc(100% - 30px); */
@@ -908,7 +1021,7 @@ a:focus {
     display: flex;
     align-items: center;
     background: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, .12); */
 }
 
 .portfolio .portfolio-text h3 {
@@ -918,6 +1031,10 @@ a:focus {
     margin: 0 0 0 15px;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.portfolio .portfolio-description{
+    margin: 0 0 0 15px;
 }
 
 .portfolio .portfolio-text a.btn {
@@ -939,552 +1056,33 @@ a:focus {
 }
 
 
-/*******************************/
-/********* Banner CSS **********/
-/*******************************/
-.banner {
-    position: relative;
-    width: 100%;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #7752fa;
-}
 
-.banner .container {
-    max-width: 750px;
-    text-align: center;
-}
-
-.banner .section-header {
-    margin-bottom: 20px;
-}
-
-.banner .section-header p {
-    color: #202020;
-    background: transparent;
-}
-
-.banner .section-header p::after {
-    display: none;
-}
-
-.banner .section-header h2 {
-    color: #ffffff;
-}
-
-.banner .section-header h2 span {
-    color: #202020;
-    font-size: 50px;
-}
-
-.banner .banner-text p {
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.banner .banner-text .btn {
-    margin-top: 15px;
-    color: #7752fa;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.banner .banner-text .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
-
-/*******************************/
-/********* Pricing CSS *********/
-/*******************************/
-.price {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.price .row {
-    padding: 0 15px;
-}
-
-.price .col-md-4 {
-    padding: 0;
-}
-
-.price .price-item {
-    position: relative;
-    margin-bottom: 30px;
-    background: #ffffff;
-}
-
-.price .featured-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
-    z-index: 1;
-}
-
-.price .price-header,
-.price .price-body,
-.price .price-footer {
-    position: relative;
-    text-align: center;
-}
-
-.price .price-header {
-    padding: 45px 0 30px 0;
-    color: #202020;
-}
-
-.price .price-item.featured-item .price-header {
-    color: #7752fa;
-}
-
-.price .price-title h2 {
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.price .price-prices h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin-left: 10px;
-}
-
-.price .price-prices h2 small {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 9px;
-    margin-left: -12px;
-}
-
-.price .price-prices h2 span {
-    margin-left: 1px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.price .price-item.featured-item h2 {
-    color: #7752fa;
-}
-
-.price .price-body {
-    padding: 0 0 20px 0;
-}
-
-.price .price-description ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.price .price-description ul li {
-    padding: 0 0 20px 0;
-}
-
-.price .price-item .price-action {
-    padding-bottom: 45px;
-}
-
-.price .price-item .price-action .btn {
-    color: #ffffff;
-    background: #202020;
-    box-shadow: inset 0 0 0 50px #202020;
-}
-
-.price .price-item .price-action .btn:hover {
-    color: #202020;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #202020;
-    border-color: #202020;
-}
-
-.price .price-item.featured-item .price-action .btn {
-    color: #ffffff;
-    background: #7752fa;
-    box-shadow: inset 0 0 0 50px #7752fa;
-}
-
-.price .price-item.featured-item .price-action .btn:hover {
-    color: #7752fa;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #7752fa;
-    border-color: #7752fa;
-}
-
-
-/*******************************/
-/*********** Team CSS **********/
-/*******************************/
-.team {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.team .team-item {
-    position: relative;
-    background: #ffffff;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: inset 0 0 0 0 transparent;
-    transition: ease-out 0.5s;
-}
-
-.team .team-img {
-    position: relative;
-    width: 50%;
-    overflow: hidden;
-}
-
-.team .team-img img {
-    position: relative;
-    width: 100%;
-    transition: .5s;
-}
-
-.team .team-text {
-    position: relative;
-    width: 50%;
-    padding: 0 30px;
-}
-
-.team .team-text h2 {
-    color: #7752fa;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    transition: 1s;
-}
-
-.team .team-text h4 {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    transition: 1s;
-}
-
-.team .team-text p {
-    margin-bottom: 20px;
-    transition: 1s;
-}
-
-.team .team-social {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.team .team-social a.btn {
-    width: 35px;
-    height: 35px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: normal;
-    margin-right: 5px;
-}
-
-.team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #7752fa;
-}
-
-.team .team-item:hover .team-img img {
-    transform: scale(1.2);
-}
-
-.team .team-item:hover .team-text h2,
-.team .team-item:hover .team-text h4,
-.team .team-item:hover .team-text p {
-    color: #ffffff;
-}
-
-.team .team-item:hover .team-social a.btn {
-    background: #ffffff;
-}
-
-.team .team-item:hover .team-social a.btn:hover {
-    border-color: #ffffff;
-}
-
-@media(max-width: 575.98px) {
-    .team .team-text {
-        padding: 0 15px;
-    }
-    
-    .team .team-text h2 {
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-
-    .team .team-text h4 {
-        margin-bottom: 5px;
-    }
-
-    .team .team-text p {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 10px;
+@media screen and (min-width: 768px){
+    .portfolio-slide .portfolio-item-image {
+        max-width: 700px;
     }
 }
 
-
-/*******************************/
-/******* Testimonial CSS *******/
-/*******************************/
-.testimonial {
-    position: relative;
-    margin: 45px 0;
-    padding: 90px 0;
-    background: #7752fa;
+@media (max-width: 575.98px) {
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px 12px;
+        margin-top: -22px;
+        color: black !important;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .portfolio-slide{
+        padding: 20px 40px;
+      }
 }
 
-.testimonial .container {
-    max-width: 900px;
-}
-
-.testimonial .testimonial-icon {
-    margin-bottom: 45px;
-    text-align: center;
-}
-
-.testimonial .testimonial-icon i {
-    font-size: 60px;
-    color: rgba(256, 256, 256, .5);
-}
-
-.testimonial .testimonial-item {
-    position: relative;
-    margin: 0 15px;
-    text-align: center;
-}
-
-.testimonial .testimonial-img {
-    position: relative;
-    margin-bottom: 15px;
-    z-index: 1;
-}
-
-.testimonial .testimonial-item img {
-    margin: 0 auto;
-    width: 120px;
-    padding: 10px;
-    border: 5px dotted #ffffff;
-    border-radius: 100px;
-}
-
-.testimonial .testimonial-text {
-    position: relative;
-    margin-top: -70px;
-    padding: 65px 35px 30px 35px;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 500px;
-}
-
-.testimonial .testimonial-item p {
-    font-size: 18px;
-    font-style: italic;
-}
-
-.testimonial .testimonial-text h3 {
-    color: #7752fa;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.testimonial .testimonial-text h4 {
-    color: #666666;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.testimonial .owl-dots {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.testimonial .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(256, 256, 256, .5);
-}
-
-.testimonial .owl-dot.active {
-    background: #ffffff;
-}
-
-
-/*******************************/
-/********* Contact CSS *********/
-/*******************************/
-.contact {
-    position: relative;
-    width: 100%;
-    margin: 45px 0;
-}
-
-.contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
-}
-
-.contact .contact-form {
-    position: relative;
-    padding: 90px 0 90px 45px;
-    background: #ffffff;
-}
-
-.contact .contact-form input {
-    color: #202020;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid #202020;
-}
-
-.contact .contact-form textarea {
-    color: #202020;
-    height: 90px;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid #202020;
-}
-
-.contact .contact-form .form-control::placeholder {
-    color: #202020;
-    opacity: 1;
-}
-
-.contact .contact-form .form-control:-ms-input-placeholder,
-.contact .contact-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
-}
-
-.contact .contact-form .btn {
-    margin-top: 35px;
-    color: #7752fa;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-    border-color: #202020;
-}
-
-.contact .contact-form .btn:hover {
-    color: #202020;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #202020;
-    border-color: #202020;
-}
-
-.contact .help-block ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-size: 14px;
-    font-style: italic;
-    color: #ffffff;
-}
-
-@media (max-width: 767.98px) {
-    .contact .container-fluid {
-        background: none;
-    }
-    
-    .contact .contact-form {
-        padding: 90px 0;
-    }
-}
-
-
-/*******************************/
-/*********** Blog CSS **********/
-/*******************************/
-.blog {
-    position: relative;
-    width: 100%;
-    padding: 45px 0 15px 0;
-}
-
-.blog .blog-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.blog .blog-img {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.blog .blog-img img {
-    width: 100%;
-    transition: .5s;
-}
-
-.blog .blog-item:hover img {
-    transform: scale(1.1);
-}
-
-.blog .blog-text {
-    position: relative;
-    padding: 30px;
-    border-right: 1px solid rgba(0, 0, 0, .07);
-    border-bottom: 1px solid rgba(0, 0, 0, .07);
-    border-left: 1px solid rgba(0, 0, 0, .07);
-}
-
-.blog .blog-text h2 {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.blog .blog-text p {
-    margin-bottom: 10px;
-}
-
-.blog .blog-item a.btn {
-    margin-top: 10px;
-    padding: 8px 15px;
-}
-
-.blog .blog-item a.btn i {
-    margin-left: 5px;
-}
-
-.blog .blog-meta {
-    position: relative;
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.blog .blog-meta p {
-    margin: 0 10px 0 0;
-    font-size: 13px;
-}
-
-.blog .blog-meta i {
-    color: #202020;
-    margin-right: 5px;
-}
-
-.blog .blog-meta p:last-child {
-    margin: 0;
-}
 
 
 /*******************************/
@@ -1493,11 +1091,13 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #7752fa;
+    background: white;
+    color: black;
+    border-radius: 20px 20px 0 0;
 }
 
 .footer .container-fluid {
-    padding: 60px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .footer .footer-info {
@@ -1506,18 +1106,22 @@ a:focus {
     text-align: center;
 }
 
-.footer .footer-info h2 {
-    margin-bottom: 20px;
-    font-size: 30px;
+.footer .footer-brand {
+    font-family: "Lalezar", system-ui;
+    color: black;
+    font-size: 24px;
     font-weight: 700;
-    color: #ffffff;
+    letter-spacing: 2px;
+    transition: .5s;
+    line-height: 2.5;
+    
 }
 
 .footer .footer-info h3 {
     margin-bottom: 25px;
     font-size: 22px;
     font-weight: 600;
-    color: #ffffff;
+    color: black;
 }
 
 .footer .footer-menu {
@@ -1527,7 +1131,6 @@ a:focus {
 }
 
 .footer .footer-menu p {
-    color: #ffffff;
     font-size: 22px;
     font-weight: 600;
     line-height: 20px;
@@ -1551,7 +1154,6 @@ a:focus {
 .footer .footer-social a i {
     margin-right: 15px;
     font-size: 20px;
-    color: #ffffff;
     transition: .3s;
 }
 
@@ -1583,7 +1185,6 @@ a:focus {
 
 .footer .copyright p {
     margin: 0;
-    color: #ffffff;
 }
 
 .footer .copyright .col-md-6:last-child p {
@@ -1591,7 +1192,6 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #ffffff;
     font-weight: 600;
 }
 
