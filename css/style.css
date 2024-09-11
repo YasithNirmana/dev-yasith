@@ -984,12 +984,25 @@ a:focus {
     margin: 10px;
 }
 
-.package-column div {
+.package-column{
+    min-height: 450px;
+}
+
+.package-column .head {
     color: black;
     background-image:  linear-gradient(to right, white , #DADADA, white);
     border-radius: 20px;
     padding: 20px;
     text-align: center;
+}
+
+.package-column .custom {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40%;
 }
 
 .package-column button {
