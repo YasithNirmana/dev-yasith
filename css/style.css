@@ -29,7 +29,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: white;
+    /* color: white; */
     outline: none;
     text-decoration: none;
 }
@@ -893,9 +893,36 @@ a:focus {
 /*******************************/
 /******** Portfolio CSS ********/
 /*******************************/
-.slideshow-container {
+.pf-container {
     position: relative;
     margin: auto;
+}
+
+.portfolio-item {
+    background-color: white;
+}
+
+.card {
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-title {
+    color: black;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-title:hover {
+    color: black !important;
+}
+
+.portfolio {
+    margin-bottom: 40px;
 }
 
 .portfolio-slide {
